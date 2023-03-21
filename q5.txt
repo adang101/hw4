@@ -1,0 +1,14 @@
+"""
+Hi, this is my file / answer to question 5.
+
+1. No the change inside increment_int_a doesn't change variable a because the function's arguement (someval) is a copy
+NOT a reference to/of a. The += operator makes a new local integer object that's assigned to someval. Thus it is not
+assigned to a.
+2. Yes the change inside increment_int_b changes variable b because since b is a list, its a mutable object.
+Since the arguement of the function (someval) is a reference to b, any changes done locally in the function will also
+affect b itself.
+3. They differ because the function arguements of both functions are of different types. In function increment_int_a,
+the argument is an integer meaning a local copy is made soley for that function. However, in function increment_int_b,
+the argument is a list meaning its a reference to the original list, b. As it is a reference, any changes made to the
+local list object inside this function will also be reflected on the original list object.
+"""
